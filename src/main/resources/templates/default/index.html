@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html th:replace="layout/main::layout(~{::title}, ~{::section})" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    	<title th:fragment="title">Home</title>
+	</head>
+   	<body>
+   		<section>
+			<p th:text="#{default.welcome}"></p>
+			<div th:utext="${text}"></div>
+			<img th:src="@{/images/harry_potter.jpeg}" />
+    	</section>   
+   	</body>
+</html>

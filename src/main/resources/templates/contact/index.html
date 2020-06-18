@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html th:replace="layout/main::layout(~{::title}, ~{::section})" xmlns:th="http://www.thymeleaf.org">
+	<head>
+    	<title th:fragment="title" th:text="${page.local.metaTitle}"></title>
+	</head>
+   	<body>
+   		<section>
+      		<div th:utext="${page.local.content}"></div>
+    	</section>   
+   	</body>
+</html>
